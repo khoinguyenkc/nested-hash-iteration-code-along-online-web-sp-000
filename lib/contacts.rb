@@ -21,7 +21,7 @@ def remove_strawberry(contacts)
         #note: value = array, not array item
         value.each_with_index do | flavor, index |
           if flavor == "strawberry"
-            value.delete_at(index)
+            value.delete(flavor)
           end
         end
 
